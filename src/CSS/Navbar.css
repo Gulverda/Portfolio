@@ -1,0 +1,56 @@
+body{
+    color: azure;
+}
+
+/* Navbar.css */
+.motion-div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: 100px;
+    max-width: 100%;
+    z-index: 20;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(43, 24, 70, 0); /* Background color with opacity for blur effect */
+    backdrop-filter: blur(10px); /* Apply blur effect to background */
+    z-index: 1000; /* Ensure the navbar is above other content */
+    font-family: 'Arial', sans-serif; /* Custom font */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #666; /* Hover color */
+  }
+  
