@@ -22,7 +22,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 0;
-    background-color: rgba(43, 24, 70, 0); /* Background color with opacity for blur effect */
+    background-color: rgba(255, 255, 255, 0); /* Background color with opacity for blur effect */
     backdrop-filter: blur(10px); /* Apply blur effect to background */
     z-index: 1000; /* Ensure the navbar is above other content */
     font-family: 'Arial', sans-serif; /* Custom font */
@@ -46,11 +46,12 @@ body{
   
   .navbar ul li a {
     text-decoration: none;
-    color: #333; /* Link color */
+    color: #faebff; /* Link color */
     font-size: 18px;
   }
   
   .navbar ul li a:hover {
-    color: #666; /* Hover color */
+    transition: 0.2s;
+    color: #392a42; /* Hover color */
   }
   
