@@ -7,7 +7,7 @@ import { Points as PointsType } from "three";
 export const StarBackground = (props) => {
   const ref = useRef(null);
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(2500), { radius: 1.2 })
+    random.inSphere(new Float32Array(1000), { radius: 1.2 })
   );
 
   useFrame((_state, delta) => {
@@ -39,7 +39,7 @@ export const StarBackground = (props) => {
 };
 
 export const StarsCanvas = () => (
-  <div className="w-full h-auto fixed inset-0 -z-10">
+  <div className="w-auto h-100vh fixed inset-0 -z-10">
     <Canvas style={{position: 'absolute', zIndex: '1'}} camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
         <StarBackground />
