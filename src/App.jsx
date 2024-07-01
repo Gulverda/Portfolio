@@ -7,34 +7,38 @@ import Card from './components/Cards/Card.jsx';
 import ProductsIcon from './components/Cards/ProductsIcon.jsx';
 import CategoriesIcon from './components/Cards/CategoriesIcon.jsx';
 import { StarsCanvas } from '../src/components/main/startBg.jsx';
+import SkillSet from './components/Skills/Skillset.jsx';
+import Timeline from './components/TimeLine/TimeLine.jsx';
 
 
 const App = () => {
   return (
     <>
-        <RootLayout>
+      <RootLayout>
 
-<div>
-{/* <StarsCanvas /> */}
+        <div>
+          {/* <StarsCanvas /> */}
 
- <Navbar />
-   <Hero />
- {/* <h1>Welcome to my React App!</h1> */}
-</div>
-</RootLayout>
-<div className="grid">
-<Card
-icon={<ProductsIcon />}
-title="Web Application"
-description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
-/>
-<Card
-icon={<CategoriesIcon />}
-title="Games"
-description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
-/>
-</div>
-</>
+          <Navbar />
+          <Hero />
+          {/* <h1>Welcome to my React App!</h1> */}
+        </div>
+      </RootLayout>
+      <div className="grid">
+        <Card
+          icon={<ProductsIcon />}
+          title="Web Application"
+          description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
+        />
+        <Card
+          icon={<CategoriesIcon />}
+          title="Games"
+          description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
+        />
+      </div>
+      <SkillSet />
+    <Timeline />
+    </>
   );
 };
 
