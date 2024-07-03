@@ -1,53 +1,71 @@
-"use client";
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { slideInFromLeft, slideInFromRight } from '../../motion/motion';
+import SkillsIcons from '../Buttons/Skills';
 import '../../CSS/Navbar.css'; // Import the CSS file
+import Profile from '../../assets/Profile_for_portfolio.png'; // Import the image
+import InfoItem from '../Buttons/InfoItem';
 
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import { motion } from "framer-motion";
-// import Image from "next/image";
+const HeroContent = () => {
+    const name = "Luka Gulverdashvili";
+    const [displayText, setDisplayText] = useState("");
 
-// Import statements in hero-content.jsx
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from "../../motion/motion";
+    useEffect(() => {
+        animateTyping(name);
+    }, []);
 
-export const HeroContent = () => {
+    const animateTyping = (text) => {
+        let currentIndex = 0;
+
+        const interval = setInterval(() => {
+            if (currentIndex <= text.length) {
+                setDisplayText(text.slice(0, currentIndex));
+                currentIndex++;
+            } else {
+                clearInterval(interval);
+                setTimeout(() => {
+                    currentIndex = 0;
+                    animateTyping(text);
+                }, 1000); // Delay before restarting animation
+            }
+        }, 100); // Typing speed
+
+        return () => clearInterval(interval);
+    };
+
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
-        >
-            <div className="motion-div">
-    
-
-                <motion.p
-                    variants={slideInFromLeft(0.8)}
-                    className="text-lg text-gray-400 my-5 max-w-[600px]"
-                >
-                    I&apos;m a Full Stack Software Engineer with experience in Website,<br></br>
-                    Mobile, and Software development. Check out my projects and skills.
-                </motion.p>
-
-                <motion.a
-                    variants={slideInFromLeft(1)}
-                    className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-                >
-                    Learn more
-                </motion.a>
+        <div style={{ display: "flex", justifyContent: "center", position: "relative", zIndex: "2" }}>
+            <div className="motion-container">
+                <div className="motion-div">
+                    <motion.div
+                        variants={slideInFromRight(0.8)}
+                        className="w-full h-full flex justify-center items-center"
+                    >
+                        <InfoItem />
+                        <img src={Profile} alt="Profile" />
+                    </motion.div>
+                    <motion.p
+                        variants={slideInFromLeft(0.8)}
+                    >
+                        Hey there! 👋 I'm{' '}
+                        <motion.span
+                            className="typewriter"
+                            style={{ display: "inline-block", marginLeft: "5px" }}
+                        >
+                            {displayText}
+                        </motion.span>
+                    </motion.p>
+                    <motion.a
+                        variants={slideInFromLeft(1)}
+                        className="button-primary"
+                    >
+                        Learn more
+                    </motion.a>
+                </div>
             </div>
-
-            <motion.div
-                variants={slideInFromRight(0.8)}
-                className="w-full h-full flex justify-center items-center"
-            >
-                {/* <Image
-          src="/hero-bg.svg"
-          alt="work icons"
-          height={650}
-          width={650}
-          draggable={false}
-          className="select-none"
-        /> */}
-            </motion.div>
-        </motion.div>
+            <SkillsIcons />
+        </div>
     );
 };
+
 export default HeroContent;

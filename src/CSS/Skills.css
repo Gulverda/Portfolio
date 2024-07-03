@@ -1,0 +1,73 @@
+.text {
+    font-size: 5px;
+    position: absolute;
+    top: 3px;
+    color: #2f363d;
+    opacity: 0;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    gap: 10px;
+  }
+  .title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100px;
+  }
+  .title span {
+    text-shadow: 1px 1px #ffffff;
+  }
+  .icon-box:hover {
+    transform: scale(2);
+    z-index: 9;
+  }
+  .icon-box {
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  .icon-box:hover .text {
+    opacity: 1;
+  }
+  .icon-box:hover button {
+    margin-top: 5px;
+  }
+  button {
+    background-color: transparent;
+    z-index: 0;
+    margin-top: 0px;
+  }
+  .activity {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  }
+  .airplay {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  }
