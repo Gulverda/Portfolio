@@ -40,7 +40,6 @@ const App = () => {
           <ProfileCard />
           <div className="grid">
           <SkillsIcons />
-
             <Card
               icon={<ProductsIcon />}
               title="Web Application"

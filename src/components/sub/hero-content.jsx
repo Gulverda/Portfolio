@@ -11,30 +11,27 @@ const HeroContent = () => {
     const [displayText, setDisplayText] = useState("");
 
     useEffect(() => {
+        const animateTyping = (text) => {
+            let currentIndex = 0;
+            const interval = setInterval(() => {
+                if (currentIndex <= text.length) {
+                    setDisplayText(text.slice(0, currentIndex));
+                    currentIndex++;
+                } else {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        currentIndex = 0;
+                        animateTyping(text);
+                    }, 2000); // 2s delay before restarting animation
+                }
+            }, 300); // Typing speed
+        };
+
         animateTyping(name);
-    }, []);
-
-    const animateTyping = (text) => {
-        let currentIndex = 0;
-
-        const interval = setInterval(() => {
-            if (currentIndex <= text.length) {
-                setDisplayText(text.slice(0, currentIndex));
-                currentIndex++;
-            } else {
-                clearInterval(interval);
-                setTimeout(() => {
-                    currentIndex = 0;
-                    animateTyping(text);
-                }, 1000); // Delay before restarting animation
-            }
-        }, 100); // Typing speed
-
-        return () => clearInterval(interval);
-    };
+    }, [name]);
 
     return (
-        <div style={{ display: "flex", justifyContent: "center", position: "relative", zIndex: "2" }}>
+        <div style={{ display: "flex", justifyContent: "space-around", position: "relative", zIndex: "2", width: "100%" }}>
             <div className="motion-container">
                 <div className="motion-div">
                     <motion.div
@@ -50,17 +47,17 @@ const HeroContent = () => {
                         Hey there! 👋 I'm{' '}
                         <motion.span
                             className="typewriter"
-                            style={{ display: "inline-block", marginLeft: "5px" }}
+                            style={{marginLeft: "5px" }}
                         >
                             {displayText}
                         </motion.span>
                     </motion.p>
-                    <motion.a
+                    <motion.button
                         variants={slideInFromLeft(1)}
-                        className="button-primary"
+                        className="button"
                     >
-                        Learn more
-                    </motion.a>
+                        <span>Learn more</span>
+                    </motion.button>
                 </div>
             </div>
             <SkillsIcons />

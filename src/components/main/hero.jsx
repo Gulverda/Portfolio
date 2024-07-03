@@ -4,7 +4,8 @@ import video1 from '../../videos/blackhole.webm';
 
 const Hero = () => {
   return (
-    <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', minHeight: '800px', width: '100%' }}>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
+      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', minHeight: '800px', width: '100%', maxWidth: '1440px' }}>
       {/* <video
         autoPlay
         muted
@@ -14,9 +15,10 @@ const Hero = () => {
         <source src={video1} type="video/webm" />
       </video> */}
 
-      <div style={{position: 'relative'}}>
+      <div style={{position: 'relative', display: 'flex', width: '100%', justifyContent: 'space-around'}}>
       <HeroContent />
       </div>
+    </div>
     </div>
   );
 };

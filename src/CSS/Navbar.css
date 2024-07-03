@@ -47,6 +47,58 @@ body{
 
 
 
+
+.motion-div .button {
+  position: relative;
+  padding: 15px 30px;
+  font-family: inherit;
+  background-color: var(--color-primary);
+  border: 2px solid;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.motion-div .button:hover span {
+  background: linear-gradient(135deg, #aefb2a 0%, #57ebde 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.motion-div .button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: -110%;
+  top: -0%;
+  background: #aefb2a;
+  pointer-events: none;
+  margin: auto;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.motion-div .button:hover {
+  letter-spacing: 2px;
+  border-image: linear-gradient(135deg, #aefb2a 0%, #57ebde 100% );
+  border-image-slice: 1;
+}
+
+.motion-div .button:hover::before {
+  left: 110%;
+}
+
+.motion-div .button:active {
+  scale: 0.95;
+}
+
+
+
 .navbar {
     position: fixed;
     top: 0;
@@ -86,25 +138,23 @@ body{
     color: #392a42; /* Hover color */
   }
   
-
-
-
   .typewriter {
+    color: #fc6a03;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typewriter cursor */
+    border-right: .15em solid #fc6a03; /* The typewriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
+      /* typing 3.5s steps(30, end), */
       blink-caret .75s step-end infinite;
   }
   
   /* The typing effect */
-  @keyframes typing {
+  /* @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
+  } */
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
