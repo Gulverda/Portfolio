@@ -6,7 +6,7 @@ const SkillsIcons = () => {
   return (
     <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '30px'}}>
       <PortfolioAboutMe />
-      <div className="icons" style={{maxWidth: "200px"}}>
+      <div className="icons" style={{maxWidth: "250px"}}>
       <div className="title">
         <span>S</span>
         <span>K</span>
