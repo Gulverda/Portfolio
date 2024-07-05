@@ -43,6 +43,7 @@ const HeroContent = () => {
                     </motion.div>
                     <motion.p
                         variants={slideInFromLeft(0.8)}
+                        style={{height: "150px"}}
                     >
                         Hey there! 👋 I'm{' '}
                         <motion.span
@@ -56,7 +57,7 @@ const HeroContent = () => {
                         variants={slideInFromLeft(1)}
                         className="button"
                     >
-                        <span>Learn more</span>
+                        <span>View more</span>
                     </motion.button>
                 </div>
             </div>

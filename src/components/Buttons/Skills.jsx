@@ -1,9 +1,12 @@
 import React from 'react';
 import '../../CSS/Skills.css'; // Assuming you have a CSS file for styling
+import PortfolioAboutMe from '../main/PortfolioAboutMe';
 
 const SkillsIcons = () => {
   return (
-    <div className="icons">
+    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '30px'}}>
+      <PortfolioAboutMe />
+      <div className="icons" style={{maxWidth: "200px"}}>
       <div className="title">
         <span>S</span>
         <span>K</span>
@@ -103,6 +106,7 @@ const SkillsIcons = () => {
         
 
       {/* Add more icon-box components for other skills */}
+    </div>
     </div>
   );
 };
