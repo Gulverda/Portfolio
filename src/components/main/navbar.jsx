@@ -1,17 +1,39 @@
 import React from 'react';
 import '../../CSS/Navbar.css'; // Import the CSS file
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faFolder, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
+const Sidebar = () => {
   return (
-    <nav className="navbar"> {/* Apply the navbar class */}
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
+    <nav className="navbar">
+      <ul className="navbar__menu">
+        <li className="navbar__item">
+          <a href="/" className="navbar__link">
+            <FontAwesomeIcon icon={faHome} />
+            <span>Home</span>
+          </a>
+        </li>
+        <li className="navbar__item">
+          <a href="/about" className="navbar__link">
+            <FontAwesomeIcon icon={faUser} />
+            <span>About</span>
+          </a>
+        </li>
+        <li className="navbar__item">
+          <a href="/projects" className="navbar__link">
+            <FontAwesomeIcon icon={faFolder} />
+            <span>Projects</span>
+          </a>
+        </li>
+        <li className="navbar__item">
+          <a href="/contact" className="navbar__link">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <span>Contact</span>
+          </a>
+        </li>
       </ul>
     </nav>
   );
 };
 
-export default Navbar;
+export default Sidebar;
