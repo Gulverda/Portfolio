@@ -31,38 +31,39 @@ const HeroContent = () => {
     }, [name]);
 
     return (
-        <div style={{ display: "flex", justifyContent: "space-around", position: "relative", zIndex: "2", width: "100%" }}>
-            <div className="motion-container">
-                <div className="motion-div">
-                    <motion.div
-                        variants={slideInFromRight(0.8)}
-                        className="w-full h-full flex justify-center items-center"
-                    >
-                        <InfoItem />
-                        <img src={Profile} alt="Profile" />
-                    </motion.div>
-                    <motion.p
-                        variants={slideInFromLeft(0.8)}
-                        style={{height: "150px"}}
-                    >
-                        Hey there! 👋 I'm{' '}
-                        <motion.span
-                            className="typewriter"
-                            style={{marginLeft: "5px" }}
-                        >
-                            {displayText}
-                        </motion.span>
-                    </motion.p>
-                    <motion.button
-                        variants={slideInFromLeft(1)}
-                        className="button"
-                    >
-                        <span>View more</span>
-                    </motion.button>
-                </div>
-            </div>
-            <SkillsIcons />
+        <div className="container" style={{ display: "flex", justifyContent: "space-around", position: "relative", zIndex: "2", width: "100%" }}>
+    <div className="motion-container">
+        <div className="motion-div">
+            <motion.div
+                variants={slideInFromRight(0.8)}
+                className="w-full h-full flex justify-center items-center"
+            >
+                <InfoItem />
+                <img src={Profile} alt="Profile" />
+            </motion.div>
+            <motion.p
+                variants={slideInFromLeft(0.8)}
+                style={{ height: "150px" }}
+            >
+                Hey there! 👋 I'm{' '}
+                <motion.span
+                    className="typewriter"
+                    style={{ marginLeft: "5px" }}
+                >
+                    {displayText}
+                </motion.span>
+            </motion.p>
+            <motion.button
+                variants={slideInFromLeft(1)}
+                className="button"
+            >
+                <span>View more</span>
+            </motion.button>
         </div>
+    </div>
+    <SkillsIcons />
+</div>
+
     );
 };
 

@@ -4,7 +4,7 @@ import PortfolioAboutMe from '../main/PortfolioAboutMe';
 
 const SkillsIcons = () => {
   return (
-    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '30px'}}>
+    <div className="for_center" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '30px'}}>
       <PortfolioAboutMe />
       <div className="icons" style={{maxWidth: "250px"}}>
       <div className="title">
