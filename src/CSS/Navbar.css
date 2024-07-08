@@ -369,8 +369,9 @@ body {
   
     .motion-container {
       display: grid;
-      grid-template-columns: 1fr;
+      /* grid-template-columns: 1fr; */
       gap: 20px;
+      padding: 0 1.8rem;
     }
   
     .motion-div {
@@ -392,6 +393,8 @@ body {
     }
 
     .motion-div p{
+      position: relative;
+      text-align: center;
       font-size: 24px;
     }
   }
