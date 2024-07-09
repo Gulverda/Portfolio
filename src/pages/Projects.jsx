@@ -37,12 +37,18 @@ const ProjectCard = ({ project }) => (
     <div className="card__content">
       <p className="card__title">{project.title}</p>
       <p className="card__description">{project.description}</p>
-      <a href={project.linkDemo} target="_blank" rel="noopener noreferrer">
+        <div className="flex_for_button" style={{display: "flex"}}>
+        <a href={project.linkDemo} target="_blank" rel="noopener noreferrer">
         <button className="card__button">Live Demo</button>
       </a>
       <a href={project.linkCode} target="_blank" rel="noopener noreferrer">
-        <button className="card__button secondary">Source Code</button>
-      </a>
+  <button className="card__button1">
+    <span className="bracket left">{"{"}</span>
+    <span className="text_for_button">Code</span>
+    <span className="bracket right">{"}"}</span>
+  </button>
+</a>
+        </div>
     </div>
   </div>
 );
