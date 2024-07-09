@@ -2,34 +2,35 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faFolder, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const SidebarDesktopTablet = () => {
   return (
     <nav className="navbar">
       <ul className="navbar__menu">
         <li className="navbar__item">
-          <a href="/" className="navbar__link">
+          <Link to="/" className="navbar__link">
             <FontAwesomeIcon icon={faHome} />
             <span>Home</span>
-          </a>
+          </Link>
         </li>
         <li className="navbar__item">
-          <a href="/about" className="navbar__link">
+          <Link to="/about" className="navbar__link">
             <FontAwesomeIcon icon={faUser} />
             <span>About</span>
-          </a>
+          </Link>
         </li>
         <li className="navbar__item">
-          <a href="/projects" className="navbar__link">
+          <Link to="/projects" className="navbar__link">
             <FontAwesomeIcon icon={faFolder} />
             <span>Projects</span>
-          </a>
+          </Link>
         </li>
         <li className="navbar__item">
-          <a href="/contact" className="navbar__link">
+          <Link to="/contact" className="navbar__link">
             <FontAwesomeIcon icon={faEnvelope} />
             <span>Contact</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from '../src/components/main/hero.jsx';
 import Navbar from '../src/components/main/navbar.jsx';
 import RootLayout from './layout.jsx';
 import Spinner from './components/Spinner/Spinner.jsx';
 import SocialLinks from './components/Buttons/SocialLinks.jsx';
+import Home from '../src/pages/Home';
+import About from '../src/pages/About';
+import Projects from '../src/pages/Projects';
+import Contact from '../src/pages/Contact';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an async operation like fetching data
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000); // Adjust the time as needed
@@ -18,19 +22,20 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <Router>
       {loading ? (
         <Spinner />
       ) : (
         <RootLayout>
           <div>
-            {/* Uncomment components below as needed */}
-            {/* <StarsCanvas /> */}
             <Navbar />
-            <Hero />
-            {/* <h1>Welcome to my React App!</h1> */}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
           </div>
-          {/* <ProfileCard /> */}
           <div className="grid">
             {/* Uncomment cards and other components below as needed */}
             {/* <Card
@@ -43,17 +48,13 @@ const App = () => {
               title="Games"
               description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
             /> */}
-       
           </div>
-          <div style={{width: '100%', position: 'relative', display: 'flex', justifyContent: 'center', bottom: '-150px'}}>
-              <SocialLinks />
-            </div>
-          {/* <SkillSet /> */}
-          {/* <Timeline /> */}
-          {/* <Astronaut /> */}
+          <div style={{ width: '100%', position: 'relative', display: 'flex', justifyContent: 'center', bottom: '-150px' }}>
+            <SocialLinks />
+          </div>
         </RootLayout>
       )}
-    </>
+    </Router>
   );
 };
 

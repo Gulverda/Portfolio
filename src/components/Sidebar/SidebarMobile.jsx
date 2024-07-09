@@ -1,34 +1,36 @@
+// HorizontalNavbar.jsx
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faFolder, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const HorizontalNavbar = () => {
   return (
     <nav className="horizontal-navbar">
       <ul className="horizontal-navbar__menu">
         <li className="horizontal-navbar__item">
-          <a href="/" className="horizontal-navbar__link">
+          <Link to="/" className="horizontal-navbar__link">
             <FontAwesomeIcon icon={faHome} />
             <span>Home</span>
-          </a>
+          </Link>
         </li>
         <li className="horizontal-navbar__item">
-          <a href="/about" className="horizontal-navbar__link">
+          <Link to="/about" className="horizontal-navbar__link">
             <FontAwesomeIcon icon={faUser} />
             <span>About</span>
-          </a>
+          </Link>
         </li>
         <li className="horizontal-navbar__item">
-          <a href="/projects" className="horizontal-navbar__link">
+          <Link to="/projects" className="horizontal-navbar__link">
             <FontAwesomeIcon icon={faFolder} />
             <span>Projects</span>
-          </a>
+          </Link>
         </li>
         <li className="horizontal-navbar__item">
-          <a href="/contact" className="horizontal-navbar__link">
+          <Link to="/contact" className="horizontal-navbar__link">
             <FontAwesomeIcon icon={faEnvelope} />
             <span>Contact</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
