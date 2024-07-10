@@ -327,6 +327,11 @@ body {
 }
 
 
+.container{
+  padding-right: 20px;
+}
+
+
 
 
   
@@ -353,12 +358,9 @@ body {
     from, to { border-color: transparent }
     50% { border-color: #00ffef; }
   }
-  
 
 
-
-
-  @media (max-width: 768px) {
+  @media (max-width: 1124px) {
     .container {
       display: grid !important;
       grid-template-columns: 1fr;
@@ -367,7 +369,56 @@ body {
       align-items: center;
       gap: 20px;
       padding: 10px;
-      margin-top: -100px;
+      margin-top: -150px !important;
+    }
+
+    .motion-div p{
+      max-width: 100% !important;
+    }
+
+    .motion-container{
+      padding: 0 0 0 110px;
+    }
+
+    .for_center{
+      flex-direction: row !important;
+      padding-left: 110px !important;
+    }
+    
+    .about-me{
+      text-align: left !important;
+    }
+
+    .newButtonClass{
+      position: absolute !important;
+      right: 103px !important;
+      bottom: -50px !important;
+    }
+
+  }
+  
+
+
+
+
+  @media (max-width: 768px) {
+    .for_center{
+      padding-left: 0px !important;
+    }
+    .newButtonClass{
+      position: relative !important;
+      right: 0 !important;
+      bottom: 10px !important;
+    }
+    .container {
+      display: grid !important;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+      margin-top: -100px !important;
     }
   
     .motion-container {
@@ -388,6 +439,14 @@ body {
       width: 100%;
       max-width: 300px;
     }
+
+    .for_center{
+      flex-direction: column !important;
+    }
+
+    .about-me{
+      text-align: center !important;
+    }
   
     .motion-div p,
     .motion-div button {
@@ -399,6 +458,12 @@ body {
       position: relative;
       text-align: center;
       font-size: 24px;
+      height: 100px !important;
     }
   }
   
+  @media (max-width: 445px) {
+    .motion-div p{
+      font-size: 20px !important;
+    }
+  }

@@ -181,3 +181,16 @@
   transform: translate(3px, 3px);
   box-shadow: 0px 0px var(--main-color);
 }
+
+
+
+@media (max-width: 768px) {
+  .flex_for_cv{
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .newButtonClass{
+    position: relative;
+  }
+}
