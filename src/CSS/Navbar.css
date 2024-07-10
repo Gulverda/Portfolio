@@ -5,6 +5,9 @@ body{
 /* Navbar.css */
 /* Navbar.css */
 
+.container{
+  padding-left: 60px;
+}
 /* Styles for the motion container */
 .motion-container {
   display: flex;
