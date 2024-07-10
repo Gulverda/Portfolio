@@ -1,6 +1,6 @@
 /* Spinner.css */
 .spinner {
-    --accent: fuchsia;
+    --accent: rgb(229, 229, 229);
     --max-scale: 4;
     --speed: 0.2;
     display: flex;
