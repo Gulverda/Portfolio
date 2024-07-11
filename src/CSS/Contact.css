@@ -139,8 +139,7 @@
     color: #333;
   }
   
-  .form-submit-btn:hover,
-  .form-reset-btn:hover {
+  .form-submit-btn:hover{
     background-color: #0056b3;
   }
   
@@ -168,30 +167,44 @@
   }
   
   .success {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 320px;
+    padding: 12px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    max-width: 400px;
-    width: 100%;
-    padding: 15px;
-    background-color: #dff0d8;
-    border: 1px solid #d6e9c6;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: start;
+    background: #84D65A;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px -3px #111;
   }
   
   .success__icon {
-    flex-shrink: 0;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-2px);
+    margin-right: 8px;
+  }
+  
+  .success__icon path {
+    fill: #393A37;
   }
   
   .success__title {
-    font-weight: bold;
-    flex-grow: 1;
+    font-weight: 500;
+    font-size: 14px;
+    color: #393A37;
   }
   
   .success__close {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .success__close path {
+    fill: #393A37;
   }
   
   .error {
@@ -218,5 +231,55 @@
     margin-left: 10px;
     color: #a94442;
     font-weight: bold;
+  }
+  
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    font-size: 16px;
+  }
+
+  .for_checkbox{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    height: 20px;
+  }
+
+  .for_checkbox .checkbox{
+    width: 15px !important;
+  }
+
+  .for_checkbox label{
+    margin: 0 !important;
+  }
+
+  .form-group label[for="consent"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .form-reset-btn {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .form-reset-btn:hover {
+    background-color: #bbb;
   }
   

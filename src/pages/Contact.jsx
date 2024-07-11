@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../CSS/Contact.css';
+import SectionBanner from '../components/Earth/SectionBanner';
 
 const SuccessNotification = ({ onClose }) => (
   <div className="success">
@@ -58,7 +59,7 @@ const ContactUs = () => {
     formData.append('message', message);
     formData.append('subject', subject);
     formData.append('consent', consent);
-    formData.append('apikey', '5272f3a3-a9b4-41f8-b61b-88d9909e0d81'); // Replace with your Web3 Forms API key
+    formData.append('apikey', import.meta.env.VITE_API_KEY);
 
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -106,13 +107,13 @@ const ContactUs = () => {
   };
 
   return (
-    <>
+    <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90vh"}}>
       <div className="notifications" style={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
         {isSubmitted && <SuccessNotification onClose={closeSuccessNotification} />}
         {errorMessage && <ErrorNotification message={errorMessage} onClose={closeErrorNotification} />}
         {isLoading && <LoadingSpinner />}
       </div>
-      <div className="for_center_contact">
+      <div className="for_center_contact" style={{width: "1000px", height: "auto", backgroundColor: "", padding: "50px", display: "flex", justifyContent: "space-around", borderRadius: "20px" }}>
         <div className="form-container">
           <div className="logo-container">
             Contact Us
@@ -186,7 +187,7 @@ const ContactUs = () => {
               </select>
             </div>
 
-            <div className="form-group">
+            <div className="form-group for_checkbox">
               <input
                 type="checkbox"
                 id="consent"
@@ -194,6 +195,7 @@ const ContactUs = () => {
                 checked={consent}
                 onChange={(e) => setConsent(e.target.checked)}
                 required
+                className="checkbox"
               />
               <label htmlFor="consent">I agree to the privacy policy</label>
             </div>
@@ -209,8 +211,9 @@ const ContactUs = () => {
             <a href="#" className="signup-link link"> Visit our help center</a>
           </p>
         </div>
+        <SectionBanner />
       </div>
-    </>
+    </div>
   );
 };
 

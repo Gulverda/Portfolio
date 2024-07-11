@@ -3,6 +3,7 @@ import React from 'react';
 // import { Footer } from './components/main/footer';
 import Navbar from '../src/components/main/navbar.jsx';
 import { StarsCanvas } from '../src/components/main/startBg.jsx';
+import SocialLinks from './components/Buttons/SocialLinks.jsx';
 // import { siteConfig } from './config';
 // import { cn } from './lib/utils';
 // import { Inter } from 'next/font/google';
@@ -23,6 +24,7 @@ const RootLayout = ({ children }) => {
         {/* <Navbar /> */}
         {children}
         {/* <Footer /> */}
+        <SocialLinks />
       </body>
     </html>
   );

@@ -49,9 +49,9 @@ const App = () => {
               description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
             /> */}
           </div>
-          <div style={{ width: '100%', position: 'relative', display: 'flex', justifyContent: 'center', bottom: '-150px' }}>
+          {/* <div style={{ width: '100%', position: 'relative', display: 'flex', justifyContent: 'center', bottom: '-150px' }}>
             <SocialLinks />
-          </div>
+          </div> */}
         </RootLayout>
       )}
     </Router>
