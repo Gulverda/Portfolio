@@ -1,6 +1,6 @@
 // CurvedCornerStar.jsx
 import React from 'react';
-import '../../CSS/Earth.css'; // Import the CSS file
+import '../../CSS/Earth.css';
 
 const CurvedCornerStar = () => (
   <div className="curved-corner-star">
