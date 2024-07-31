@@ -1,0 +1,23 @@
+/* src/pages/About.css */
+
+.chrono-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .chrono-item-active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chrono-card {
+    transition: opacity 0.5s ease;
+  }
+  
+  .chrono-card-active {
+    opacity: 1;
+  }
+  
+  .chrono-card-inactive {
+    opacity: 0.6;
+  }
+  
