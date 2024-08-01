@@ -2,6 +2,11 @@ body{
     color: azure;
 }
 
+a{
+    color: azure;
+    text-decoration: none;
+}
+
 /* Navbar.css */
 /* Navbar.css */
 
@@ -53,9 +58,17 @@ body{
 
 
 
+.button a{
+  padding: 15px 20px !important;
+}
 .motion-div .button {
   position: relative;
-  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  /* padding: 15px 30px; */
   font-family: inherit;
   background-color: var(--color-primary);
   border: 2px solid;

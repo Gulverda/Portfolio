@@ -57,7 +57,9 @@ const HeroContent = () => {
                 variants={slideInFromLeft(1)}
                 className="button"
             >
-                <span>View more</span>
+                <a href="/about" className="for_a"> 
+                    <span>View more</span>
+                </a>
             </motion.button>
         </div>
     </div>
