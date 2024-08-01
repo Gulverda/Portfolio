@@ -211,7 +211,9 @@ const ContactUs = () => {
             <a href="#" className="signup-link link"> Visit our help center</a>
           </p>
         </div>
-        <SectionBanner />
+        <div className="sectionbanner">
+          <SectionBanner />
+        </div>
       </div>
     </div>
   );
