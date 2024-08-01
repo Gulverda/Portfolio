@@ -1,6 +1,23 @@
-/* src/pages/About.css */
+/* src/CSS/About.css */
 
-.chrono-item {
+.for_padding{
+    padding-left: 120px !important;
+}
+
+.about-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .chrono-container {
+    overflow: hidden;
+  }
+  
+  /* Add smooth scrolling */
+  .chrono-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -19,5 +36,44 @@
   
   .chrono-card-inactive {
     opacity: 0.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 10px;
+      max-width: 100%;
+    }
+
+    .for_padding{
+        padding-left: 20px !important;
+    }
+  
+    .chrono-container {
+      padding: 0;
+    }
+  
+    /* Adjust Chrono styles for smaller screens */
+    .chrono-item {
+      margin: 0 10px;
+    }
+    
+    .hxysuk{
+        width: 20% !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-container {
+      padding: 5px;
+    }
+  
+    .chrono-container {
+      padding: 0;
+    }
+  
+    .chrono-item {
+      margin: 0 5px;
+    }
   }
   

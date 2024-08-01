@@ -44,7 +44,7 @@ const About = () => {
   }, [activeItem]);
 
   return (
-    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: '1' }}>
+    <div className="for_padding" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: '1' }}>
       <h1>About</h1>
       <div
         ref={timelineRef}
