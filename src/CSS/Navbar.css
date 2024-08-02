@@ -55,12 +55,10 @@ a{
   background-color: #00ffef; 
 }
 
-
-
-
 .button a{
   padding: 15px 20px !important;
 }
+
 .motion-div .button {
   position: relative;
   display: flex;
