@@ -5,6 +5,7 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "node server.js",
     "dev": "vite --host",
     "build": "vite build",
@@ -36,7 +37,9 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "source-map-explorer": "^2.5.3",
     "vite": "^5.2.0",
-    "vite-plugin-compression": "^0.5.1"
+    "vite-plugin-compression": "^0.5.1",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }
