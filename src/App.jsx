@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Hero from '../src/components/main/hero.jsx';
 import Navbar from '../src/components/main/navbar.jsx';
 import RootLayout from './layout.jsx';
 import Spinner from './components/Spinner/Spinner.jsx';
-import SocialLinks from './components/Buttons/SocialLinks.jsx';
 import Home from '../src/pages/Home';
 import About from '../src/pages/About';
 import Projects from '../src/pages/Projects';

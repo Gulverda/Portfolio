@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroContent from '../sub/hero-content.jsx';
-import video1 from '../../videos/blackhole.webm';
 
 const Hero = () => {
   return (

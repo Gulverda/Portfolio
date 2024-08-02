@@ -39,8 +39,8 @@ const HeroContent = () => {
                 className="w-full h-full flex justify-center items-center"
             >
                 <InfoItem />
-                <img src={Profile} alt="Profile" />
-            </motion.div>
+                <img src={Profile} alt="Profile" width={500} height={500} />
+                </motion.div>
             <motion.p
                 variants={slideInFromLeft(0.8)}
                 style={{ height: "150px" }}
