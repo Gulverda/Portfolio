@@ -8,28 +8,28 @@ const projectsData = [
     description: 'This React application allows users to search for GitHub profiles, displaying detailed information in a visually appealing and responsive layout. The inclusion of day and night modes enhances the user experience, and the application handles errors gracefully.',
     linkDemo: 'https://github-user-profile-se4rch.netlify.app/',
     linkCode: 'https://github.com/Gulverda/Github-Profile-Searcher',
-    backgroundImage: 'url(/assets/Github_Searcher.png)',
+    backgroundImage: 'url(/src/assets/Github_Searcher.png)',
   },
   {
     title: 'The Planets',
     description: 'The Planets" is a GitHub-hosted web application project by Luka Gulverdashvili, focusing on showcasing information about planets in our solar system using React.js and emphasizing front-end development skills',
     linkDemo: 'https://the-plan3ts.netlify.app/',
     linkCode: 'https://github.com/Gulverda/The-Planets',
-    backgroundImage: 'url(/assets/theplanets.png)',
+    backgroundImage: 'url(/src/assets/theplanets.png)',
   },
   {
     title: 'NFTs',
     description: 'NFTs is a GitHub repository managed by Luka Gulverdashvili, dedicated to exploring Non-Fungible Tokens (NFTs). The project likely involves development or research related to NFT technology, potentially using various tools and frameworks.',
     linkDemo: 'https://nft5.netlify.app/',
     linkCode: 'https://github.com/Gulverda/NFTs',
-    backgroundImage: 'url(/assets/nft.png)',
+    backgroundImage: 'url(/src/assets/nft.png)',
   },
 ];
 
 
 const ProjectCard = ({ project }) => (
-  <div className="card" style={{ backgroundImage: project.backgroundImage }}>
-    {project.icon}
+<div className="card" style={{ backgroundImage: project.backgroundImage }}>
+{project.icon}
     <div className="card__content">
       <p className="card__title">{project.title}</p>
       <p className="card__description">{project.description}</p>
