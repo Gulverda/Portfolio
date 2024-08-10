@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../CSS/Contact.css';
 import SectionBanner from '../components/Earth/SectionBanner';
+import SocialLinks from '../components/Buttons/SocialLinks';
 
 const SuccessNotification = ({ onClose }) => (
   <div className="success">
@@ -107,7 +108,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90vh"}}>
+    <>
+          <div className="for_contact" style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90dvh"}}>
       <div className="notifications" style={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
         {isSubmitted && <SuccessNotification onClose={closeSuccessNotification} />}
         {errorMessage && <ErrorNotification message={errorMessage} onClose={closeErrorNotification} />}
@@ -216,6 +218,11 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    {/* <div className="for_socials" style={{marginBottom: '170px'}}>
+      <SocialLinks />
+    </div> */}
+    </>
+
   );
 };
 

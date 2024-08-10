@@ -4,27 +4,35 @@ import '../CSS/Project.css';
 
 const projectsData = [
   {
-    title: 'Project One',
+    title: 'GitHub Profile Searcher',
     description: 'This React application allows users to search for GitHub profiles, displaying detailed information in a visually appealing and responsive layout. The inclusion of day and night modes enhances the user experience, and the application handles errors gracefully.',
     linkDemo: 'https://github-user-profile-se4rch.netlify.app/',
     linkCode: 'https://github.com/Gulverda/Github-Profile-Searcher',
-    backgroundImage: 'url(/assets/Github_Searcher.png)', // Updated path
+    backgroundImage: 'url(/assets/Github_Searcher.png)', // Must match exactly with the file name
   },
   {
     title: 'The Planets',
     description: 'The Planets" is a GitHub-hosted web application project by Luka Gulverdashvili, focusing on showcasing information about planets in our solar system using React.js and emphasizing front-end development skills',
     linkDemo: 'https://the-plan3ts.netlify.app/',
     linkCode: 'https://github.com/Gulverda/The-Planets',
-    backgroundImage: 'url(/assets/theplanets.png)', // Updated path
+    backgroundImage: 'url(/assets/theplanets.png)', // Must match exactly with the file name
   },
   {
     title: 'NFTs',
     description: 'NFTs is a GitHub repository managed by Luka Gulverdashvili, dedicated to exploring Non-Fungible Tokens (NFTs). The project likely involves development or research related to NFT technology, potentially using various tools and frameworks.',
     linkDemo: 'https://nft5.netlify.app/',
     linkCode: 'https://github.com/Gulverda/NFTs',
-    backgroundImage: 'url(/assets/nft.png)', // Updated path
+    backgroundImage: 'url(/assets/nft.png)', // Must match exactly with the file name
+  },
+  {
+    title: 'Gree',
+    description: 'This is an informational website about conditioners and cooling systems, featuring filters and detailed information on various products.',
+    linkDemo: 'https://gree-react.vercel.app/',
+    linkCode: 'https://github.com/duda-el/gree-react',
+    backgroundImage: 'url(/assets/gree.png)', // Add the corresponding image file
   },
 ];
+
 
 
 

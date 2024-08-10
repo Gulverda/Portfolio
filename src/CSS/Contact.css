@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 1;
     position: relative;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .form-container p {
@@ -287,5 +287,20 @@
   @media (max-width: 768px) {
     .sectionbanner {
       display: none;
+    }
+
+    .for_contact{
+      height: 100vh !important;
+    }
+
+    .for_center_contact{
+      margin-top: 0px;
+      padding: 10px !important;
+    }
+
+    .form-container{
+      max-height: 700px;
+      height: 100%;
+      overflow-x: scroll;
     }
   }
