@@ -4,6 +4,7 @@ import React from 'react';
 // import Navbar from '../src/components/main/navbar.jsx';
 // import { StarsCanvas } from '../src/components/main/startBg.jsx';
 import SocialLinks from './components/Buttons/SocialLinks.jsx';
+import { Analytics } from '@vercel/analytics/react';
 // import { siteConfig } from './config';
 // import { cn } from './lib/utils';
 // import { Inter } from 'next/font/google';
@@ -23,6 +24,7 @@ const RootLayout = ({ children }) => {
         {/* <StarsCanvas /> */}
         {/* <Navbar /> */}
         {children}
+        <Analytics id="G-XXXXXXXXXX" />
         {/* <Footer /> */}
         <SocialLinks />
       </body>
