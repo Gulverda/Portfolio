@@ -31,6 +31,12 @@ const projectsData = [
     linkCode: 'https://github.com/duda-el/gree-react',
     backgroundImage: 'url(/assets/gree.png)', // Add the corresponding image file
   },
+  {
+    title: 'E-Commerce Website',
+    description: 'This e-commerce website features a fully functional cart, user registration and sign-in, item addition, and filtering capabilities. Users can browse and filter products, add items to their cart, and place orders. The ordering process is available without payment integration.',
+    linkCode: 'https://github.com/Gulverda/E-Commerce', // Replace with your actual GitHub repo link
+    backgroundImage: 'url(/assets/ecommerce.png)', // Make sure this image is available in your assets
+  }
 ];
 
 
