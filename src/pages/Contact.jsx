@@ -60,8 +60,7 @@ const ContactUs = () => {
     formData.append('message', message);
     formData.append('subject', subject);
     formData.append('consent', consent);
-    formData.append('apikey', import.meta.env.Access_Key
-);
+    formData.append('apikey', import.meta.env.VITE_API_KEY);
   
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
