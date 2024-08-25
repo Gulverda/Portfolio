@@ -45,38 +45,41 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
+    const { name, email, message, subject, consent } = formData;
+  
     if (!name || !email || !message || !subject || !consent) {
       setErrorMessage('All fields are required.');
       return;
     }
-
+  
     setIsLoading(true);
-
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('phone', phone);
-    formData.append('message', message);
-    formData.append('subject', subject);
-    formData.append('consent', consent);
-    formData.append('apikey', import.meta.env.VITE_API_KEY);
-
-    fetch('https://api.web3forms.com/submit', {
+  
+    const data = new FormData();
+    Object.entries(formData).forEach(([key, value]) => data.append(key, value));
+    data.append('apikey', import.meta.env.VITE_API_KEY);
+  
+    fetch(API_URL, {
       method: 'POST',
-      body: formData,
+      body: data,
     })
-    .then(response => response.json())
+    .then(response => {
+      console.log('Response Status:', response.status); // Log status
+      return response.json();
+    })
     .then(data => {
+      console.log('Response Data:', data); // Log API response
       setIsLoading(false);
       if (data.success) {
         setIsSubmitted(true);
-        setName('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-        setSubject('');
-        setConsent(false);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+          subject: '',
+          consent: false,
+        });
       } else {
         setErrorMessage(data.message || 'Failed to send message');
       }
@@ -87,6 +90,7 @@ const ContactUs = () => {
       setErrorMessage('An error occurred while sending your message. Please try again later.');
     });
   };
+  
 
   const closeSuccessNotification = () => {
     setIsSubmitted(false);
