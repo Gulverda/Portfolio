@@ -36,7 +36,14 @@ const projectsData = [
     description: 'This e-commerce website features a fully functional cart, user registration and sign-in, item addition, and filtering capabilities. Users can browse and filter products, add items to their cart, and place orders. The ordering process is available without payment integration.',
     linkCode: 'https://github.com/Gulverda/E-Commerce', // Replace with your actual GitHub repo link
     backgroundImage: 'url(/assets/ecommerce.png)', // Make sure this image is available in your assets
-  }
+  },
+  {
+    title: 'Positivus',
+    description: 'Positivus is a dynamic React.js website designed to deliver a seamless user experience. This project features a clean, responsive design, showcasing modern web development practices and interactive elements for an engaging interface.',
+    linkCode: 'https://github.com/Gulverda/Positivus',
+    linkDemo: 'https://positivus-nine.vercel.app/',
+    backgroundImage: 'url(/assets/positivus.png)',
+  },
 ];
 
 
