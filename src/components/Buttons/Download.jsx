@@ -3,12 +3,13 @@ import React from 'react';
 const Download = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '../src/Files/Luka-Gulverdashvili.pdf'; // Adjust the path to your CV file if necessary
+    link.href = '/Files/Luka-Gulverdashvili.pdf'; // Adjusted path to work with public hosting
     link.download = 'Luka-Gulverdashvili.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
+  
 
   return (
     <button className="newButtonClass" type="button" onClick={handleDownload}>
