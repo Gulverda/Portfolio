@@ -421,10 +421,6 @@ body {
 
   }
   
-
-
-
-
   @media (max-width: 768px) {
     .for_center{
       padding-left: 0px !important;
@@ -490,5 +486,11 @@ body {
   @media (max-width: 445px) {
     .motion-div p{
       font-size: 20px !important;
+    }
+
+    .motion-div img {
+      width: 100%;
+      max-width: 250px;
+      height: 250px;
     }
   }
