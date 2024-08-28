@@ -34,22 +34,6 @@ const App = () => {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
-          <div className="grid">
-            {/* Uncomment cards and other components below as needed */}
-            {/* <Card
-              icon={<ProductsIcon />}
-              title="Web Application"
-              description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
-            />
-            <Card
-              icon={<CategoriesIcon />}
-              title="Games"
-              description="Standard chunk of Lorem Ipsum used since the 1500s is showed below for those interested."
-            /> */}
-          </div>
-          {/* <div style={{ width: '100%', position: 'relative', display: 'flex', justifyContent: 'center', bottom: '-150px' }}>
-            <SocialLinks />
-          </div> */}
         </RootLayout>
       )}
     </Router>
