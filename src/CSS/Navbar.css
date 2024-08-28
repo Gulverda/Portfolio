@@ -413,6 +413,12 @@ body {
       bottom: -50px !important;
     }
 
+    .motion-div img {
+      width: 100%;
+      max-width: 450px;
+      height: 450px;
+    }
+
   }
   
 

@@ -106,6 +106,13 @@
     left: 50%;
     margin-left: 56px;
   }
+
+
+  @media screen and (max-width: 1124px) {
+    .item-hints {
+      display: none;
+    }
+  }
   
 
   @media (max-width: 768px) {
