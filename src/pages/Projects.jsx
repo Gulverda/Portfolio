@@ -44,6 +44,13 @@ const projectsData = [
     linkDemo: 'https://positivus-nine.vercel.app/',
     backgroundImage: 'url(/assets/positivus.png)',
   },
+  {
+    title: 'Car Rental',
+    description: 'This project is a car rental website built using React.js. The website features a user-friendly interface, allowing users to browse available cars, view details, and make reservations. The project showcases front-end development skills and modern web design practices.',
+    linkCode: 'https://github.com/Gulverda/CarRental',
+    linkDemo: 'https://car-rental-theta-orcin.vercel.app/',
+    backgroundImage: 'url(/assets/carRental.png)',
+  }
 ];
 
 
