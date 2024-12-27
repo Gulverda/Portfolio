@@ -1,6 +1,6 @@
 // src/pages/Projects.jsx
-import React from 'react';
 import '../CSS/Project.css';
+import PropTypes from 'prop-types';
 
 const projectsData = [
   {
@@ -50,6 +50,27 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/CarRental',
     linkDemo: 'https://car-rental-theta-orcin.vercel.app/',
     backgroundImage: 'url(/assets/carRental.png)',
+  },
+  {
+    title: 'Estatein Agency',
+    description: 'EstateIn is a modern and user-friendly Angular-based real estate application designed to simplify the process of finding, listing, and managing properties. Whether you\'re a homeowner, a buyer, or a real estate agent, the platform provides seamless solutions to connect you with the right opportunities.',
+    linkCode: 'https://github.com/Gulverda/Estatein-Angular',
+    linkDemo: 'https://estatein-angular.vercel.app/',
+    backgroundImage: 'url(/assets/estatein.png)',
+  },
+  {
+    title: 'PayNety',
+    description: 'PayNety.com is an innovative online platform offering a seamless and secure way to manage financial transactions for businesses and individuals. As a modern payment gateway, PayNety.com is dedicated to providing reliable, efficient, and user-friendly solutions for digital payments, billing, and financial management.',
+    linkCode: '', 
+    linkDemo: 'https://paynety.com/',
+    backgroundImage: 'url(/assets/paynety.png)',
+  },
+  {
+    title: 'NewsPortal',
+    description: 'The Full-Stack Blog Web App is a modern, feature-rich platform designed for creating, sharing, and engaging with content. Built using cutting-edge technologies, the app delivers a seamless user experience for bloggers and readers alike. From intuitive interfaces to powerful back-end functionalities, it empowers users to share their stories, ideas, and knowledge effortlessly.',
+    linkCode: 'https://github.com/Gulverda/FullStack_BlogWeb',
+    linkDemo: 'https://fullstack-blogweb.onrender.com/',
+    backgroundImage: 'url(/assets/blog.png)',
   }
 ];
 
@@ -58,7 +79,6 @@ const projectsData = [
 
 const ProjectCard = ({ project }) => (
 <div className="card" style={{ backgroundImage: project.backgroundImage }}>
-{project.icon}
     <div className="card__content">
       <p className="card__title">{project.title}</p>
       <p className="card__description">{project.description}</p>
@@ -90,6 +110,15 @@ const Projects = () => {
       </div>
     </div>
   );
+};
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    linkDemo: PropTypes.string,
+    linkCode: PropTypes.string.isRequired,
+    backgroundImage: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Projects;

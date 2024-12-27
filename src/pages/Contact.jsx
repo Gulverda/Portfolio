@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import '../CSS/Contact.css';
-import SectionBanner from '../components/Earth/SectionBanner';
-import SocialLinks from '../components/Buttons/SocialLinks';
 
 const SuccessNotification = ({ onClose }) => (
   <div className="success">
@@ -18,6 +17,9 @@ const SuccessNotification = ({ onClose }) => (
     </div>
   </div>
 );
+SuccessNotification.propTypes = {
+  onClose: PropTypes.func.isRequired,
+};
 
 const ErrorNotification = ({ message, onClose }) => (
   <div className="error">
@@ -25,6 +27,11 @@ const ErrorNotification = ({ message, onClose }) => (
     <div className="error__close" onClick={onClose}>✖</div>
   </div>
 );
+
+ErrorNotification.propTypes = {
+  message: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 
 const LoadingSpinner = () => (
   <div className="loading-spinner">
@@ -218,10 +225,8 @@ const ContactUs = () => {
             <a href="#" className="signup-link link"> Visit our help center</a>
           </p>
         </div>
-        <div className="sectionbanner">
-          <SectionBanner />
-        </div>
       </div>
+      
     </div>
     {/* <div className="for_socials" style={{marginBottom: '170px'}}>
       <SocialLinks />
