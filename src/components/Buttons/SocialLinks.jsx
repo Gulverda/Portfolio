@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../CSS/SocialLinks.css';
 
 const SocialLinks = () => {
@@ -83,7 +82,6 @@ const SocialLinks = () => {
         <div className="tooltip">GitHub</div>
       </li>
 
-      {/* Repeat the above structure for other social media icons */}
     </ul>
   );
 };

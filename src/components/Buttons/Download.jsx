@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Download = () => {
   const handleDownload = () => {
     const link = document.createElement('a');

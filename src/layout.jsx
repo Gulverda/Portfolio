@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
         <Analytics id="G-XXXXXXXXXX" />
         <SpeedInsights />
         {/* <Footer /> */}
-        <section style={{marginTop: "20px", paddingBottom: "50px"}}>
+        <section style={{marginTop: "20px", paddingBottom: "50px", position: "relative", zIndex: "1"}}>
           <SocialLinks />
         </section>
     </>

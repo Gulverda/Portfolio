@@ -11,8 +11,22 @@ const projectsData = [
     backgroundImage: 'url(/assets/Github_Searcher.png)', // Must match exactly with the file name
   },
   {
+    title: 'IP Address Tracker',
+    description: 'This project is an IP Address Tracker built with React and Leaflet. It allows users to enter an IP address or domain and view its location, timezone, and ISP details. The app features an interactive map with custom markers and uses the Geo API for location data, all with responsive design for different devices.',
+    linkCode: 'https://github.com/Gulverda/IP-Address-Tracker',
+    linkDemo: 'https://ip-address-tracker-omega-seven.vercel.app/',
+    backgroundImage: 'url(/assets/ipTracker.png)',
+  },
+  {
+    title: 'Password Generator',
+    description: 'Pass3ord Generator is an easy-to-use web tool for creating strong, random passwords. Users can customize the length and complexity, ensuring secure passwords for their online accounts. The app features a clean, responsive design for both desktop and mobile devices.',
+    linkCode: 'https://github.com/Gulverda/Random-Pass-Gen',
+    linkDemo: 'https://pass3ordgenerator.netlify.app/',
+    backgroundImage: 'url(/assets/passGen.png)',
+  },
+  {
     title: 'The Planets',
-    description: 'The Planets" is a GitHub-hosted web application project by Luka Gulverdashvili, focusing on showcasing information about planets in our solar system using React.js and emphasizing front-end development skills',
+    description: 'The Planets is a GitHub-hosted web application project by Luka Gulverdashvili, focusing on showcasing information about planets in our solar system using React.js and emphasizing front-end development skills',
     linkDemo: 'https://the-plan3ts.netlify.app/',
     linkCode: 'https://github.com/Gulverda/The-Planets',
     backgroundImage: 'url(/assets/theplanets.png)', // Must match exactly with the file name
@@ -60,14 +74,14 @@ const projectsData = [
   },
   {
     title: 'PayNety',
-    description: 'PayNety.com is an innovative online platform offering a seamless and secure way to manage financial transactions for businesses and individuals. As a modern payment gateway, PayNety.com is dedicated to providing reliable, efficient, and user-friendly solutions for digital payments, billing, and financial management.',
+    description: 'PayNety.com is an online platform that offers secure and efficient solutions for managing financial transactions. It serves as a modern payment gateway for businesses and individuals, providing reliable digital payment and billing services.',
     linkCode: '', 
     linkDemo: 'https://paynety.com/',
     backgroundImage: 'url(/assets/paynety.png)',
   },
   {
     title: 'NewsPortal',
-    description: 'The Full-Stack Blog Web App is a modern, feature-rich platform designed for creating, sharing, and engaging with content. Built using cutting-edge technologies, the app delivers a seamless user experience for bloggers and readers alike. From intuitive interfaces to powerful back-end functionalities, it empowers users to share their stories, ideas, and knowledge effortlessly.',
+    description: 'The Full-Stack Blog Web App is a platform for creating and sharing content. It features an intuitive interface for bloggers to publish posts and a seamless experience for readers. Built with modern technologies, it combines a user-friendly front end with a powerful back end.',
     linkCode: 'https://github.com/Gulverda/FullStack_BlogWeb',
     linkDemo: 'https://fullstack-blogweb.onrender.com/',
     backgroundImage: 'url(/assets/blog.png)',

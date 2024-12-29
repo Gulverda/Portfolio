@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { slideInFromLeft, slideInFromRight } from '../../motion/motion';
 import SkillsIcons from '../Buttons/Skills';
@@ -45,7 +45,7 @@ const HeroContent = () => {
                 variants={slideInFromLeft(0.8)}
                 style={{ height: "150px" }}
             >
-                Hey there! 👋 I'm{' '}
+                Hey there! 👋 I&apos;m{' '}
                 <motion.span
                     className="typewriter"
                     style={{ marginLeft: "5px" }}
