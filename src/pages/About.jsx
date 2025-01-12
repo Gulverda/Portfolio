@@ -21,16 +21,22 @@ const About = () => {
       cardDetailedText: "Served successfully as a Google Developer Student Club Lead for the 2023 - 2024 academic year and received a Certificate of Completion.",
     },
     {
-      title: "2023 - Present",
+      title: "2023 Dec. - Present",
       cardTitle: "Bizon.ge",
-      cardSubtitle: "Front-End Developer",
-      cardDetailedText: "Currently working on bizon.ge.",
+      cardSubtitle: "FrontEnd Developer",
+      cardDetailedText: "Currently working as a front-end developer at Bizon.ge, where I design and implement responsive, user-friendly interfaces, ensuring smooth interactions and optimal performance across the platform. I collaborate closely with the team to enhance the user experience and ensure high-quality code.",
     },
     {
-      title: "2024 - July",
+      title: "2024 Jun. - July",
       cardTitle: "Python and Flask Framework Complete Course",
       cardSubtitle: "Udemy",
       cardDetailedText: "Completed the 'Python and Flask Framework Complete Course' on Udemy.",
+    },
+    {
+      title: "2024 Oct. - Present",
+      cardTitle: "Doer Community Backend Developer at Doer",
+      cardSubtitle: "BackEnd Developer",
+      cardDetailedText: "Working as a backend developer at Doer, I focus on building scalable server-side solutions using the MERN stack (MongoDB, Express, Node.js). I develop APIs, manage databases, and ensure smooth integration between backend and frontend, delivering high-performance and reliable applications.",
     },
   ];
 

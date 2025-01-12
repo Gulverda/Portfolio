@@ -7,7 +7,7 @@ const HintComponent = () => {
         <span className="hint-radius"></span>
         <span className="hint-dot">INFO</span>
         <div className="hint-content do--split-children">
-          <p style={{maxWidth: "350px", fontSize: "16px"}}>I am Junior React.JS/Front-End Developer with a drive to become a proficient Full-Stack Web Developer. Explore my projects and skills!</p>
+          <p style={{maxWidth: "350px", fontSize: "16px"}}>I am Junior/Middle <span style={{color: "#00ffef"}}> React.JS/TS </span> Front-End Developer with a drive to become a proficient Full-Stack <span style={{color: "#00ffef"}}> MERN </span> Web Developer. Explore my projects and skills!</p>
         </div>
       </div>
     </div>
