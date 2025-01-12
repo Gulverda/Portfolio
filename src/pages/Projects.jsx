@@ -4,6 +4,13 @@ import PropTypes from 'prop-types';
 
 const projectsData = [
   {
+    title: 'Tip Calculator',
+    description: 'This is an application that can distribute/calculate existing tax to multiple people as a percentage. Also useful for calculating and apportioning bank charge interest.',
+    linkDemo: 'https://gulverda.github.io/Tip-Calculator/',
+    linkCode: 'https://github.com/Gulverda/Tip-Calculator',
+    backgroundImage: 'url(/assets/tip_calculator.png)', // Must match exactly with the file name
+  },
+  {
     title: 'GitHub Profile Searcher',
     description: 'This React application allows users to search for GitHub profiles, displaying detailed information in a visually appealing and responsive layout. The inclusion of day and night modes enhances the user experience, and the application handles errors gracefully.',
     linkDemo: 'https://github-user-profile-se4rch.netlify.app/',
@@ -23,6 +30,20 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/Random-Pass-Gen',
     linkDemo: 'https://pass3ordgenerator.netlify.app/',
     backgroundImage: 'url(/assets/passGen.png)',
+  },
+  {
+    title: 'Snake Game',
+    description: 'The Snake Game is a classic arcade game where you guide a growing snake to eat food while avoiding walls and its tail. The goal is to score as high as possible by eating without crashing.',
+    linkDemo: 'https://main--unrivaled-biscotti-c03aa7.netlify.app/',
+    linkCode: 'https://github.com/Gulverda/Snake',
+    backgroundImage: 'url(/assets/snake.png)', // Must match exactly with the file name
+  },
+  {
+    title: 'Travel Web',
+    description: 'Travel Web is a sleek and modern landing page designed to inspire travel. It features stunning visuals, a responsive layout, and a clean design to captivate users and encourage exploration.',
+    linkDemo: 'https://gulverda.github.io/Travel-Web/',
+    linkCode: 'https://github.com/Gulverda/Travel-Web?tab=readme-ov-file',
+    backgroundImage: 'url(/assets/travel.png)', // Must match exactly with the file name
   },
   {
     title: 'The Planets',
