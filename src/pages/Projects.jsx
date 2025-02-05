@@ -72,6 +72,13 @@ const projectsData = [
     backgroundImage: 'url(/assets/ecommerce.png)', // Make sure this image is available in your assets
   },
   {
+    title: 'Task Management',
+    description: 'TaskFlow is a powerful and intuitive task management app designed to help you stay organized and boost productivity. Whether you are managing personal tasks or team projects, TaskFlow provides a seamless experience with real-time updates, drag-and-drop task management, and a user-friendly interface.',
+    linkCode: 'https://github.com/Gulverda/Task_Management_Board_Klipy/tree/main/client',
+    linkDemo: 'https://task-management-board-klipy-seven.vercel.app',
+    backgroundImage: 'url(/assets/taskmanager.png)',
+  },
+  {
     title: 'Positivus',
     description: 'Positivus is a dynamic React.js website designed to deliver a seamless user experience. This project features a clean, responsive design, showcasing modern web development practices and interactive elements for an engaging interface.',
     linkCode: 'https://github.com/Gulverda/Positivus',
