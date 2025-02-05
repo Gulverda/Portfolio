@@ -1,5 +1,4 @@
-import React from 'react';
-import '../../CSS/SkillSet.css'; // Assuming you have a CSS file for styling
+import '../../CSS/SkillSet.css'; 
 
 const SkillSet = () => {
   return (
@@ -8,7 +7,7 @@ const SkillSet = () => {
       <div className="skills">
         <div className="skill">
           <div className="skill-icon">
-            <i className="fas fa-code"></i> {/* Replace with your icon */}
+            <i className="fas fa-code"></i>
           </div>
           <div className="skill-details">
             <h3>Programming Languages</h3>
@@ -17,7 +16,7 @@ const SkillSet = () => {
         </div>
         <div className="skill">
           <div className="skill-icon">
-            <i className="fas fa-laptop-code"></i> {/* Replace with your icon */}
+            <i className="fas fa-laptop-code"></i>
           </div>
           <div className="skill-details">
             <h3>Frameworks & Libraries</h3>
@@ -26,7 +25,7 @@ const SkillSet = () => {
         </div>
         <div className="skill">
           <div className="skill-icon">
-            <i className="fas fa-paint-brush"></i> {/* Replace with your icon */}
+            <i className="fas fa-paint-brush"></i> 
           </div>
           <div className="skill-details">
             <h3>Design Tools</h3>

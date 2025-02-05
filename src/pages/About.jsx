@@ -1,5 +1,4 @@
-// src/pages/About.jsx
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Chrono } from 'react-chrono';
 import '../CSS/About.css'; // Assuming you have a CSS file for styling
 

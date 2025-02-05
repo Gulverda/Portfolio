@@ -1,4 +1,3 @@
-// src/pages/Projects.jsx
 import '../CSS/Project.css';
 import PropTypes from 'prop-types';
 

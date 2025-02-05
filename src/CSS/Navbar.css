@@ -30,9 +30,10 @@ a{
 .motion-div p {
   height: auto;
   max-width: 450px;
-  font-size: 3rem; /* Adjust font size as needed */
-  color: #666; /* Adjust text color as needed */
-  margin-bottom: 1.5rem; /* Adjust margin bottom as needed */
+  /* font-size: 3rem;  */
+  font-size: 2.8rem; 
+  color: #666; 
+  margin-bottom: 1.5rem; 
 }
 
 /* Styles for the primary button */
@@ -509,3 +510,4 @@ body {
       font-size: 18px !important;
     }
   }
+  

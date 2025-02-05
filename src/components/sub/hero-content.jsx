@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { slideInFromLeft, slideInFromRight } from '../../motion/motion';
 import SkillsIcons from '../Buttons/Skills';
-import '../../CSS/Navbar.css'; // Import the CSS file
-import Profile from '/assets/Profile_for_portfolio.webp'; // Import the image
+import '../../CSS/Navbar.css'; 
+import Profile from '/assets/Profile_for_portfolio.webp';
+import Profile_img from '/assets/Avatar.png';
 import InfoItem from '../Buttons/InfoItem';
 
 const HeroContent = () => {
@@ -39,7 +40,10 @@ const HeroContent = () => {
                 className="w-full h-full flex justify-center items-center"
             >
                 <InfoItem />
+                <div className="image_cont" style={{display: "flex", justifyContent: "center", width: "100%"}}>
+                {/* <img src={Profile_img} alt="Profile" loading="lazy" width={350} height={350} /> */}
                 <img src={Profile} alt="Profile" loading="lazy" width={500} height={500} />
+                </div>
                 </motion.div>
             <motion.p
                 variants={slideInFromLeft(0.8)}
