@@ -7,14 +7,14 @@ const projectsData = [
     description: 'This is an application that can distribute/calculate existing tax to multiple people as a percentage. Also useful for calculating and apportioning bank charge interest.',
     linkDemo: 'https://gulverda.github.io/Tip-Calculator/',
     linkCode: 'https://github.com/Gulverda/Tip-Calculator',
-    backgroundImage: 'url(/assets/tip_calculator.png)', // Must match exactly with the file name
+    backgroundImage: 'url(/assets/tip_calculator.png)', 
   },
   {
     title: 'GitHub Profile Searcher',
     description: 'This React application allows users to search for GitHub profiles, displaying detailed information in a visually appealing and responsive layout. The inclusion of day and night modes enhances the user experience, and the application handles errors gracefully.',
     linkDemo: 'https://github-user-profile-se4rch.netlify.app/',
     linkCode: 'https://github.com/Gulverda/Github-Profile-Searcher',
-    backgroundImage: 'url(/assets/Github_Searcher.png)', // Must match exactly with the file name
+    backgroundImage: 'url(/assets/Github_Searcher.png)', 
   },
   {
     title: 'IP Address Tracker',
@@ -35,41 +35,41 @@ const projectsData = [
     description: 'The Snake Game is a classic arcade game where you guide a growing snake to eat food while avoiding walls and its tail. The goal is to score as high as possible by eating without crashing.',
     linkDemo: 'https://main--unrivaled-biscotti-c03aa7.netlify.app/',
     linkCode: 'https://github.com/Gulverda/Snake',
-    backgroundImage: 'url(/assets/snake.png)', // Must match exactly with the file name
+    backgroundImage: 'url(/assets/snake.png)', 
   },
   {
     title: 'Travel Web',
     description: 'Travel Web is a sleek and modern landing page designed to inspire travel. It features stunning visuals, a responsive layout, and a clean design to captivate users and encourage exploration.',
     linkDemo: 'https://gulverda.github.io/Travel-Web/',
     linkCode: 'https://github.com/Gulverda/Travel-Web?tab=readme-ov-file',
-    backgroundImage: 'url(/assets/travel.png)', // Must match exactly with the file name
+    backgroundImage: 'url(/assets/travel.png)', 
   },
   {
     title: 'The Planets',
     description: 'The Planets is a GitHub-hosted web application project by Luka Gulverdashvili, focusing on showcasing information about planets in our solar system using React.js and emphasizing front-end development skills',
     linkDemo: 'https://the-plan3ts.netlify.app/',
     linkCode: 'https://github.com/Gulverda/The-Planets',
-    backgroundImage: 'url(/assets/theplanets.png)', // Must match exactly with the file name
+    backgroundImage: 'url(/assets/theplanets.png)',
   },
   {
     title: 'NFTs',
     description: 'NFTs is a GitHub repository managed by Luka Gulverdashvili, dedicated to exploring Non-Fungible Tokens (NFTs). The project likely involves development or research related to NFT technology, potentially using various tools and frameworks.',
     linkDemo: 'https://nft5.netlify.app/',
     linkCode: 'https://github.com/Gulverda/NFTs',
-    backgroundImage: 'url(/assets/nft.png)', // Must match exactly with the file name
+    backgroundImage: 'url(/assets/nft.png)', 
   },
   {
     title: 'Gree',
     description: 'This is an informational website about conditioners and cooling systems, featuring filters and detailed information on various products.',
     linkDemo: 'https://gree-react.vercel.app/',
     linkCode: 'https://github.com/duda-el/gree-react',
-    backgroundImage: 'url(/assets/gree.png)', // Add the corresponding image file
+    backgroundImage: 'url(/assets/gree.png)', 
   },
   {
     title: 'E-Commerce Website',
     description: 'This e-commerce website features a fully functional cart, user registration and sign-in, item addition, and filtering capabilities. Users can browse and filter products, add items to their cart, and place orders. The ordering process is available without payment integration.',
-    linkCode: 'https://github.com/Gulverda/E-Commerce', // Replace with your actual GitHub repo link
-    backgroundImage: 'url(/assets/ecommerce.png)', // Make sure this image is available in your assets
+    linkCode: 'https://github.com/Gulverda/E-Commerce', 
+    backgroundImage: 'url(/assets/ecommerce.png)',
   },
   {
     title: 'Task Management',
