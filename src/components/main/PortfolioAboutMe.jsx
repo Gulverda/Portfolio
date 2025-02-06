@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PortfolioAboutMe = () => (
   <div className="about-me">
     <h1>About Me</h1>

@@ -1,8 +1,8 @@
 const Download = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '../Files/Luka-Gulverdashvili.pdf'; // Adjusted path to work with public hosting
-    link.download = 'Luka-Gulverdashvili.pdf';
+    link.href = '/pdf/Luka_Gulverdashvili.pdf';
+    link.download = 'Luka_Gulverdashvili.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

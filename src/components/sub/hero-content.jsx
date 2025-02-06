@@ -4,7 +4,6 @@ import { slideInFromLeft, slideInFromRight } from '../../motion/motion';
 import SkillsIcons from '../Buttons/Skills';
 import '../../CSS/Navbar.css'; 
 import Profile from '/assets/Profile_for_portfolio.webp';
-import Profile_img from '/assets/Avatar.png';
 import InfoItem from '../Buttons/InfoItem';
 
 const HeroContent = () => {

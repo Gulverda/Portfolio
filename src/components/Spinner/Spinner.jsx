@@ -1,5 +1,3 @@
-// Spinner.jsx
-import React from 'react';
 import '../../CSS/Spinner.css';
 
 const Spinner = () => {

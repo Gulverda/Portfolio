@@ -1,4 +1,3 @@
-import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import '../../CSS/Navbar.css'; // Import the CSS file
 import SidebarDesktopTablet from '../Sidebar/SidebarDesktopTablet';

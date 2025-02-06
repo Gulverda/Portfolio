@@ -1,4 +1,3 @@
-// RootLayout.js
 import React from 'react';
 import SocialLinks from './components/Buttons/SocialLinks.jsx';
 import { Analytics } from '@vercel/analytics/react';

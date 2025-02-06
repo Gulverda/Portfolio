@@ -1,5 +1,4 @@
-import React from 'react';
-import '../../CSS/CardComponent.css'; // Make sure to create and link a corresponding CSS file for styling
+import '../../CSS/CardComponent.css';
 
 const CardComponent = () => {
   return (

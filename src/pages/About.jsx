@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Chrono } from 'react-chrono';
-import '../CSS/About.css'; // Assuming you have a CSS file for styling
+import '../CSS/About.css';
 
 const About = () => {
   const [activeItem, setActiveItem] = useState(0);

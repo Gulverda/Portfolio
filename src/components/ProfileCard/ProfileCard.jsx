@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ProfileCard = () => {
   return (
     <div className="bg-sky-700 rounded-2xl shadow-sm shadow-sky-500 outline outline-slate-400 -outline-offset-8">
