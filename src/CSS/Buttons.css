@@ -6,7 +6,8 @@
     padding-right: 170px;
   }
   .item-hints .hint {
-    margin: 150px auto;
+    top: 150px;
+    /* margin: 150px auto; */
     position: relative;
     display: flex;
     justify-content: center;
