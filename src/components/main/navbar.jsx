@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import '../../CSS/Navbar.css'; // Import the CSS file
+import '../../CSS/Navbar.css';
 import SidebarDesktopTablet from '../Sidebar/SidebarDesktopTablet';
 import HorizontalNavbar from '../Sidebar/SidebarMobile';
 

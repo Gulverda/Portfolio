@@ -1,7 +1,7 @@
 const PortfolioAboutMe = () => (
   <div className="about-me">
     <h1>About Me</h1>
-    <p style={{fontFamily: "arial", fontSize: "14px", maxWidth: "500px", marginTop: "20px", color: "#e6e6e6"}}>Hello! I'm Luka Gulverdashvili, a middle-level front-end developer passionate about creating intuitive web applications using React.
+    <p style={{fontFamily: "arial", fontSize: "14px", maxWidth: "500px", marginTop: "20px", color: "#e6e6e6"}}>Hello! I'm Luka Gulverdashvili, a Junior/Middle level front-end developer passionate about creating intuitive web applications using React.
     I specialize in React.js, TypeScript, and the MERN stack (MongoDB, Express, React, Node.js), bridging the gap between user experience and server-side efficiency.
     </p>
     <p style={{fontFamily: "arial", fontSize: "14px", maxWidth: "500px", marginTop: "20px", color: "#e6e6e6"}}>
