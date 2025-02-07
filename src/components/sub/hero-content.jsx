@@ -41,7 +41,7 @@ const HeroContent = () => {
                 <InfoItem />
                 <div className="image_cont" style={{display: "flex", justifyContent: "center", width: "100%"}}>
                 {/* <img src={Profile_img} alt="Profile" loading="lazy" width={350} height={350} /> */}
-                <img src={Profile} alt="Profile" loading="lazy" width={500} height={500} />
+                <img src={Profile} alt="Profile" loading="eager" width={500} height={500} />
                 </div>
                 </motion.div>
             <motion.p
