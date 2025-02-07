@@ -1,4 +1,4 @@
-import "../../CSS/Skills.css"; // Assuming you have a CSS file for styling
+import "../../CSS/Skills.css"; 
 import PortfolioAboutMe from "../main/PortfolioAboutMe";
 import Download from "./Download";
 

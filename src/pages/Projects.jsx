@@ -1,6 +1,19 @@
 import '../CSS/Project.css';
 import PropTypes from 'prop-types';
 
+import htmlIcon from '../../public/assets/icons/html.svg';
+import cssIcon from '../../public/assets/icons/css.svg';
+import jsIcon from '../../public/assets/icons/js.svg';
+import tsIcon from '../../public/assets/icons/ts.svg';
+import tailwindIcon from '../../public/assets/icons/tailwind.svg';
+import reactIcon from '../../public/assets/icons/react.svg';
+import phpIcon from '../../public/assets/icons/php.svg';
+import sqlIcon from '../../public/assets/icons/sql.svg';
+import nodeIcon from '../../public/assets/icons/node.svg';
+import expressIcon from '../../public/assets/icons/express.svg';
+import mongoIcon from '../../public/assets/icons/mongodb.svg'; 
+import angularIcon from '../../public/assets/icons/angularLine.svg';
+
 const projectsData = [
   {
     title: 'Tip Calculator',
@@ -8,6 +21,11 @@ const projectsData = [
     linkDemo: 'https://gulverda.github.io/Tip-Calculator/',
     linkCode: 'https://github.com/Gulverda/Tip-Calculator',
     backgroundImage: 'url(/assets/tip_calculator.png)', 
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon
+    ],
   },
   {
     title: 'GitHub Profile Searcher',
@@ -15,6 +33,10 @@ const projectsData = [
     linkDemo: 'https://github-user-profile-se4rch.netlify.app/',
     linkCode: 'https://github.com/Gulverda/Github-Profile-Searcher',
     backgroundImage: 'url(/assets/Github_Searcher.png)', 
+    technologies: [
+      tsIcon,
+      tailwindIcon
+    ],
   },
   {
     title: 'IP Address Tracker',
@@ -22,6 +44,12 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/IP-Address-Tracker',
     linkDemo: 'https://ip-address-tracker-omega-seven.vercel.app/',
     backgroundImage: 'url(/assets/ipTracker.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'Password Generator',
@@ -29,20 +57,37 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/Random-Pass-Gen',
     linkDemo: 'https://pass3ordgenerator.netlify.app/',
     backgroundImage: 'url(/assets/passGen.png)',
+    technologies: [
+      htmlIcon,
+      tailwindIcon,
+      tsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'Snake Game',
     description: 'The Snake Game is a classic arcade game where you guide a growing snake to eat food while avoiding walls and its tail. The goal is to score as high as possible by eating without crashing.',
     linkDemo: 'https://main--unrivaled-biscotti-c03aa7.netlify.app/',
     linkCode: 'https://github.com/Gulverda/Snake',
-    backgroundImage: 'url(/assets/snake.png)', 
+    backgroundImage: 'url(/assets/snake.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'Travel Web',
     description: 'Travel Web is a sleek and modern landing page designed to inspire travel. It features stunning visuals, a responsive layout, and a clean design to captivate users and encourage exploration.',
     linkDemo: 'https://gulverda.github.io/Travel-Web/',
     linkCode: 'https://github.com/Gulverda/Travel-Web?tab=readme-ov-file',
-    backgroundImage: 'url(/assets/travel.png)', 
+    backgroundImage: 'url(/assets/travel.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon
+    ],
   },
   {
     title: 'The Planets',
@@ -50,26 +95,49 @@ const projectsData = [
     linkDemo: 'https://the-plan3ts.netlify.app/',
     linkCode: 'https://github.com/Gulverda/The-Planets',
     backgroundImage: 'url(/assets/theplanets.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'NFTs',
     description: 'NFTs is a GitHub repository managed by Luka Gulverdashvili, dedicated to exploring Non-Fungible Tokens (NFTs). The project likely involves development or research related to NFT technology, potentially using various tools and frameworks.',
     linkDemo: 'https://nft5.netlify.app/',
     linkCode: 'https://github.com/Gulverda/NFTs',
-    backgroundImage: 'url(/assets/nft.png)', 
+    backgroundImage: 'url(/assets/nft.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'Gree',
     description: 'This is an informational website about conditioners and cooling systems, featuring filters and detailed information on various products.',
     linkDemo: 'https://gree-react.vercel.app/',
     linkCode: 'https://github.com/duda-el/gree-react',
-    backgroundImage: 'url(/assets/gree.png)', 
+    backgroundImage: 'url(/assets/gree.png)',
+    technologies: [
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'E-Commerce Website',
     description: 'This e-commerce website features a fully functional cart, user registration and sign-in, item addition, and filtering capabilities. Users can browse and filter products, add items to their cart, and place orders. The ordering process is available without payment integration.',
     linkCode: 'https://github.com/Gulverda/E-Commerce', 
     backgroundImage: 'url(/assets/ecommerce.png)',
+    technologies: [
+      sqlIcon,
+      phpIcon,
+      cssIcon,
+      jsIcon,
+    ],
   },
   {
     title: 'Task Management',
@@ -77,6 +145,12 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/Task_Management_Board_Klipy/tree/main/client',
     linkDemo: 'https://task-management-board-klipy-seven.vercel.app',
     backgroundImage: 'url(/assets/taskmanager.png)',
+    technologies: [
+      mongoIcon,
+      expressIcon,
+      reactIcon,
+      nodeIcon,
+    ],
   },
   {
     title: 'Positivus',
@@ -84,6 +158,12 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/Positivus',
     linkDemo: 'https://positivus-nine.vercel.app/',
     backgroundImage: 'url(/assets/positivus.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'Car Rental',
@@ -91,6 +171,12 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/CarRental',
     linkDemo: 'https://car-rental-theta-orcin.vercel.app/',
     backgroundImage: 'url(/assets/carRental.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
   },
   {
     title: 'Estatein Agency',
@@ -98,6 +184,12 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/Estatein-Angular',
     linkDemo: 'https://estatein-angular.vercel.app/',
     backgroundImage: 'url(/assets/estatein.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      tsIcon,
+      angularIcon
+    ],
   },
   {
     title: 'PayNety',
@@ -105,6 +197,11 @@ const projectsData = [
     linkCode: '', 
     linkDemo: 'https://paynety.com/',
     backgroundImage: 'url(/assets/paynety.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon
+    ],
   },
   {
     title: 'NewsPortal',
@@ -112,6 +209,12 @@ const projectsData = [
     linkCode: 'https://github.com/Gulverda/FullStack_BlogWeb',
     linkDemo: 'https://fullstack-blogweb.onrender.com/',
     backgroundImage: 'url(/assets/blog.png)',
+    technologies: [
+      mongoIcon,
+      expressIcon,
+      reactIcon,
+      nodeIcon,
+    ],
   }
 ];
 
@@ -119,23 +222,35 @@ const projectsData = [
 
 
 const ProjectCard = ({ project }) => (
-<div className="card" style={{ backgroundImage: project.backgroundImage }}>
+  <div className="card" style={{ backgroundImage: project.backgroundImage }}>
     <div className="card__content">
       <p className="card__title">{project.title}</p>
       <p className="card__description">{project.description}</p>
-        <div className="flex_for_button" style={{display: "flex"}}>
+      <div className="flex_for_button" style={{display: "flex"}}>
         <a href={project.linkDemo} target="_blank" rel="noopener noreferrer">
-        <button className="card__button">Live Demo</button>
-      </a>
-      <a href={project.linkCode} target="_blank" rel="noopener noreferrer">
-  <button className="card__button1">
-    <span className="bracket left">{"{"}</span>
-    <span className="text_for_button">Code</span>
-    <span className="bracket right">{"}"}</span>
-  </button>
-</a>
-        </div>
+          <button className="card__button">Live Demo</button>
+        </a>
+        <a href={project.linkCode} target="_blank" rel="noopener noreferrer">
+          <button className="card__button1">
+            <span className="bracket left">{"{"}</span>
+            <span className="text_for_button">Code</span>
+            <span className="bracket right">{"}"}</span>
+          </button>
+        </a>
+      </div>
     </div>
+    <div className="used_technologies">
+    {project.technologies.map((tech, index) => (
+        <img 
+          key={index} 
+          className="tech-icon" 
+          src={tech} 
+          alt={`technology-${index}`} 
+          width="24" 
+          height="24"
+        />
+      ))}
+      </div>
   </div>
 );
 
@@ -159,6 +274,7 @@ ProjectCard.propTypes = {
     linkDemo: PropTypes.string,
     linkCode: PropTypes.string.isRequired,
     backgroundImage: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 
