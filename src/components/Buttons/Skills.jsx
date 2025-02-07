@@ -33,7 +33,7 @@ const SkillsIcons = () => {
             <span>S</span>
           </div>
           <div className="icon-box">
-            <button className="activity">
+            <button className="activity html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -48,7 +48,7 @@ const SkillsIcons = () => {
             <div className="text">HTML5</div>
           </div>
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay css">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -80,7 +80,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay sass">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -96,7 +96,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay bootstrap">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -112,7 +112,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay angular">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 48 48"
@@ -133,7 +133,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay tailwind_css">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -149,7 +149,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay typescript">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -165,7 +165,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay jquery">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -181,7 +181,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay reactjs">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -197,7 +197,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay redux">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 50 50"
@@ -211,7 +211,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay nodejs">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -227,7 +227,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay mongodb">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100"
@@ -259,7 +259,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay expressjs">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -275,7 +275,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay php">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -291,7 +291,7 @@ const SkillsIcons = () => {
           </div>
 
           <div className="icon-box">
-            <button className="airplay">
+            <button className="airplay sql">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
