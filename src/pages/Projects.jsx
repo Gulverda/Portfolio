@@ -65,6 +65,18 @@ const projectsData = [
     ],
   },
   {
+    title: 'The Weather App',
+    description: 'The Weather App is a sleek, dark-themed weather forecast tool that provides real-time updates, including temperature, humidity, and conditions. It features hourly with dynamic icons for a smooth user experience.',
+    linkCode: 'https://github.com/Gulverda/Weather_App', 
+    linkDemo: 'https://weath3r-app.netlify.app/',
+    backgroundImage: 'url(/assets/weatherApp.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon
+    ],
+  },
+  {
     title: 'Snake Game',
     description: 'The Snake Game is a classic arcade game where you guide a growing snake to eat food while avoiding walls and its tail. The goal is to score as high as possible by eating without crashing.',
     linkDemo: 'https://main--unrivaled-biscotti-c03aa7.netlify.app/',
