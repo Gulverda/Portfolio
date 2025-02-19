@@ -155,7 +155,7 @@ body {
   border-radius: var(--borderRadius);
   padding: var(--spacer) 0;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
-  height: calc(100vh - var(--spacer) * 4);
+  height: calc(100vh - var(--spacer) * 2);
   display: flex;
   flex-direction: column;
 }
@@ -406,11 +406,11 @@ body {
       text-align: left !important;
     }
 
-    .newButtonClass{
+    /* .newButtonClass{
       position: absolute !important;
       right: 103px !important;
       bottom: -50px !important;
-    }
+    } */
 
     .motion-div img {
       width: 100%;
