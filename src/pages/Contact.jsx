@@ -49,17 +49,58 @@ const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  // Validation Rules
+  const validate = () => {
+    let newErrors = {};
+
+    if (!name.trim()) {
+      newErrors.name = 'Name is required';
+    } else if (!/^[a-zA-Z\s]+$/.test(name)) {
+      newErrors.name = 'Name must contain only letters and spaces';
+    }
+
+    if (!email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!/^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+      newErrors.email = 'Invalid email format';
+    }
+
+    if (phone && !/^\d{9,15}$/.test(phone)) {
+      newErrors.phone = 'Phone number must contain 10-15 digits';
+    }
+
+    if (!subject) {
+      newErrors.subject = 'Please select a subject';
+    }
+
+    if (!message.trim()) {
+      newErrors.message = 'Message is required';
+    } else if (message.length < 10) {
+      newErrors.message = 'Message must be at least 10 characters long';
+    } else if (message.length > 250) {
+      newErrors.message = 'Message cannot exceed 250 characters';
+    }
+
+    if (!consent) {
+      newErrors.consent = 'You must agree to the privacy policy';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    if (!name || !email || !message || !subject || !consent) {
-      setErrorMessage('All fields are required.');
+
+    if (!validate()) {
+      setErrorMessage('Please fill in all required fields');
       return;
     }
-  
+
     setIsLoading(true);
-  
+
     const formData = new FormData();
     formData.append('name', name);
     formData.append('email', email);
@@ -68,37 +109,32 @@ const ContactUs = () => {
     formData.append('subject', subject);
     formData.append('consent', consent);
     formData.append('apikey', import.meta.env.VITE_API_KEY);
-  
+
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: formData,
     })
-    .then(response => {
-      console.log('Response Status:', response.status); // Log status
-      return response.json();
-    })
-    .then(data => {
-      console.log('Response Data:', data); // Log API response
-      setIsLoading(false);
-      if (data.success) {
-        setIsSubmitted(true);
-        setName('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-        setSubject('');
-        setConsent(false);
-      } else {
-        setErrorMessage(data.message || 'Failed to send message');
-      }
-    })
-    .catch(error => {
-      setIsLoading(false);
-      console.error('Error:', error);
-      setErrorMessage('An error occurred while sending your message. Please try again later.');
-    });
+      .then(response => response.json())
+      .then(data => {
+        setIsLoading(false);
+        if (data.success) {
+          setIsSubmitted(true);
+          setName('');
+          setEmail('');
+          setPhone('');
+          setMessage('');
+          setSubject('');
+          setConsent(false);
+        } else {
+          setErrorMessage(data.message || 'Failed to send message');
+        }
+      })
+      .catch(error => {
+        setIsLoading(false);
+        console.error('Error:', error);
+        setErrorMessage('An error occurred while sending your message. Please try again later.');
+      });
   };
-  
 
   const closeSuccessNotification = () => {
     setIsSubmitted(false);
@@ -117,91 +153,93 @@ const ContactUs = () => {
     setConsent(false);
     setErrorMessage('');
     setIsSubmitted(false);
+    setErrors({});
   };
 
   return (
     <>
-          <div className="for_contact" style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90dvh"}}>
-      <div className="notifications" style={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
-        {isSubmitted && <SuccessNotification onClose={closeSuccessNotification} />}
-        {errorMessage && <ErrorNotification message={errorMessage} onClose={closeErrorNotification} />}
-        {isLoading && <LoadingSpinner />}
-      </div>
-      <div className="for_center_contact" style={{width: "1000px", height: "auto", backgroundColor: "", padding: "50px", display: "flex", justifyContent: "space-around", borderRadius: "20px" }}>
-        <div className="form-container">
-          <div className="logo-container">
-            Contact Us
-          </div>
-
-          <form className="form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
+      <div className="for_contact" style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90dvh"}}>
+        <div className="notifications" style={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
+          {isSubmitted && <SuccessNotification onClose={closeSuccessNotification} />}
+          {errorMessage && <ErrorNotification message={errorMessage} onClose={closeErrorNotification} />}
+          {isLoading && <LoadingSpinner />}
+        </div>
+        <div className="for_center_contact" style={{width: "1000px", height: "auto", padding: "50px", display: "flex", justifyContent: "space-around", borderRadius: "20px" }}>
+          <div className="form-container">
+            <div className="logo-container">
+              Contact Us
             </div>
 
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
+            <form className="form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                {errors.name && <span className="error-message">{errors.name}</span>}
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="phone">Phone</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Enter your phone number"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
-            </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                {errors.email && <span className="error-message">{errors.email}</span>}
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Enter your message"
-                required
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
-              <span className="char-counter">{message.length}/250 characters</span>
-            </div>
+              <div className="form-group">
+                <label htmlFor="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                />
+                {errors.phone && <span className="error-message">{errors.phone}</span>}
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="subject">Subject</label>
-              <select
-                id="subject"
-                name="subject"
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-                required
-              >
-                <option value="">Select a subject</option>
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Technical Support">Technical Support</option>
-                <option value="Billing Issue">Billing Issue</option>
-              </select>
-            </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
+                {errors.message && <span className="error-message">{errors.message}</span>}
+                <span className="char-counter">{message.length}/250 characters</span>
+              </div>
 
-            <div className="form-group for_checkbox">
+              <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <select
+                  id="subject"
+                  name="subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                >
+                  <option value="">Select a subject</option>
+                  <option value="FrontEnd Development">FrontEnd Development</option>
+                  <option value="FullStack Development">FullStack Development</option>
+                  <option value="Technical Support">Technical Support</option>
+                </select>
+                {errors.subject && <span className="error-message">{errors.subject}</span>}
+              </div>
+              
+              <div className="form-group for_checkbox">
               <input
                 type="checkbox"
                 id="consent"
@@ -214,25 +252,20 @@ const ContactUs = () => {
               <label htmlFor="consent">I agree to the privacy policy</label>
             </div>
 
-            <div className="form-buttons">
-              <button className="form-submit-btn" type="submit">Send Message</button>
-              <button className="form-reset-btn" type="button" onClick={handleReset}>Reset</button>
-            </div>
-          </form>
-
-          <p className="signup-link">
+              <p className="signup-link">
             Need support? 
             <a href="#" className="signup-link link"> Visit our help center</a>
           </p>
+
+          <div className="form-buttons">
+              <button className="form-submit-btn" type="submit">Send Message</button>
+              <button className="form-reset-btn" type="button" onClick={handleReset}>Reset</button>
+            </div>
+            </form>
+          </div>
         </div>
       </div>
-      
-    </div>
-    {/* <div className="for_socials" style={{marginBottom: '170px'}}>
-      <SocialLinks />
-    </div> */}
     </>
-
   );
 };
 

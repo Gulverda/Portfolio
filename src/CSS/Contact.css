@@ -316,7 +316,7 @@
   }
   
   .form-group select {
-    appearance: none; /* Remove default arrow */
+    appearance: none !important; 
     padding: 0.8rem 1rem;
     padding-right: 2.5rem;
     border-radius: 8px;
@@ -352,4 +352,12 @@
   /* Hover state for option list */
   .form-group select:hover option:hover {
     background-color: #2054a3;
+  }
+
+  .error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    font-weight: 500;
   }
