@@ -178,6 +178,19 @@ const projectsData = [
     ],
   },
   {
+    title: 'Online BookShop',
+    description: 'Online Bookstore lets you browse books, add them to your cart, and complete a mock checkout. Enjoy a seamless shopping experience with a simple and user-friendly interface. No real payments—just explore and shop freely!',
+    linkCode: 'https://github.com/Gulverda/Online-Bookstore',
+    linkDemo: 'https://online-bookstore-nine.vercel.app/',
+    backgroundImage: 'url(/assets/BookShop.png)',
+    technologies: [
+      angularIcon,
+      htmlIcon,
+      cssIcon,
+      tsIcon,
+    ],
+  },
+  {
     title: 'Car Rental',
     description: 'This project is a car rental website built using React.js. The website features a user-friendly interface, allowing users to browse available cars, view details, and make reservations. The project showcases front-end development skills and modern web design practices.',
     linkCode: 'https://github.com/Gulverda/CarRental',
