@@ -191,6 +191,19 @@ const projectsData = [
     ],
   },
   {
+    title: 'Bizon.ge',
+    description: 'Bizon.ge is Georgia’s leading online marketplace for heavy machinery and equipment, including agricultural, medical, and construction machinery. Launched in 2019, it connects buyers and sellers, offering sales, rentals, financing, and insurance options to streamline transactions.',
+    linkCode: '',
+    linkDemo: 'https://bizon.ge/',
+    backgroundImage: 'url(/assets/Bizon.png)',
+    technologies: [
+      htmlIcon,
+      cssIcon,
+      jsIcon,
+      reactIcon
+    ],
+  },
+  {
     title: 'Car Rental',
     description: 'This project is a car rental website built using React.js. The website features a user-friendly interface, allowing users to browse available cars, view details, and make reservations. The project showcases front-end development skills and modern web design practices.',
     linkCode: 'https://github.com/Gulverda/CarRental',
