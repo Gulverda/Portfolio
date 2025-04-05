@@ -248,10 +248,24 @@ const projectsData = [
     linkDemo: 'https://fullstack-blogweb.onrender.com/',
     backgroundImage: 'url(/assets/blog.png)',
     technologies: [
-      mongoIcon,
-      expressIcon,
       reactIcon,
       nodeIcon,
+      expressIcon,
+      mongoIcon,
+    ],
+  },
+  {
+    title: 'RealTime Chat Web',
+    description: 'This real-time chat application enables secure authentication, private messaging, friend request management, and profile customization, all within a sleek, responsive UI powered by Tailwind CSS. Built with Socket.io for instant communication, it delivers a fast and interactive user experience.',
+    linkCode: 'https://github.com/Gulverda/Real-Time-Chat',
+    linkDemo: 'https://real-time-chat-mu.vercel.app/',
+    backgroundImage: 'url(/assets/OnlineChat.png)',
+    technologies: [
+      reactIcon,
+      tailwindIcon,
+      nodeIcon,
+      expressIcon,
+      mongoIcon,
     ],
   }
 ];
