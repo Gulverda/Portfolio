@@ -14,13 +14,13 @@ const About = () => {
       cardDetailedText: "Actively pursuing an IT degree at Georgian American University. Engaged in various academic projects and gaining hands-on experience in the IT field.",
     },
     {
-      title: "2023 - 2024",
+      title: "2023 - 2025",
       cardTitle: "Lead of Google Developer Student Club",
       cardSubtitle: "Georgian American University",
       cardDetailedText: "Served successfully as a Google Developer Student Club Lead for the 2023 - 2024 academic year and received a Certificate of Completion.",
     },
     {
-      title: "2023 Dec. - Present",
+      title: "2023 Dec. - 2025 Apr.",
       cardTitle: "Bizon.ge",
       cardSubtitle: "FrontEnd Developer",
       cardDetailedText: "Currently working as a front-end developer at Bizon.ge, where I design and implement responsive, user-friendly interfaces, ensuring smooth interactions and optimal performance across the platform. I collaborate closely with the team to enhance the user experience and ensure high-quality code.",
@@ -32,10 +32,16 @@ const About = () => {
       cardDetailedText: "Completed the 'Python and Flask Framework Complete Course' on Udemy.",
     },
     {
-      title: "2024 Oct. - Present",
+      title: "2024 Oct. - 2025 Apr",
       cardTitle: "Doer Community Backend Developer at Doer",
       cardSubtitle: "BackEnd Developer",
       cardDetailedText: "Working as a backend developer at Doer, I focus on building scalable server-side solutions using the MERN stack (MongoDB, Express, Node.js). I develop APIs, manage databases, and ensure smooth integration between backend and frontend, delivering high-performance and reliable applications.",
+    },
+    {
+      title: "2025 Apr. - Present",
+      cardTitle: "Junior Full-Stack Developer at KLIPY",
+      cardSubtitle: "Junior Full-Stack Developer",
+      cardDetailedText: "Currently working as a Junior Full-Stack Developer at KLIPY, primarily focused on frontend development using Next.js with TypeScript during the initial months. My responsibilities include building responsive and interactive user interfaces. The backend is powered by PHP with Laravel, and I will gradually transition into full-stack tasks involving backend integration and API development.",
     },
   ];
 
